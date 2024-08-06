@@ -34,7 +34,7 @@ export function Card({ bikeData }: CardProps) {
   return (
     <>
       <div className='my-5 grid grid-cols-1 rounded-xl bg-blue-200 shadow-lg drop-shadow-lg sm:grid-cols-[300px_auto]'>
-        <Link href={`/bikes/${bikeData.id}`}>
+        <Link href={`/bikes/${bikeData.id}`} prefetch={false}>
           <Image
             priority={false}
             src={bikeData.thumb || "bike-placeholder.svg"}
@@ -52,6 +52,7 @@ export function Card({ bikeData }: CardProps) {
             <Link
               href={`/bikes/${bikeData.id}`}
               className='text-black hover:underline'
+              prefetch={false}
             >
               {bikeData.title}
             </Link>
