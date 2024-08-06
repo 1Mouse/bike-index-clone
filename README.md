@@ -1,6 +1,6 @@
 # Bike Index Clone
 
-## deployed at [Vercel](https://bike-index-clone.vercel.app/)
+## Deployed at [Vercel](https://bike-index-clone.vercel.app/)
 ## Usage
 > development
 > ```
@@ -29,10 +29,15 @@
 
 
 ## Features:
-- showing bikes with searching and filtering.
-- handled query params to make the results sharable like Amazon.
-- pagination with a go to certain page to enhance user experience.
-- loading spinners, loading progress bar, handle errors and empty state.
+- Showing bikes with searching and filtering.
+- Handled query params to make the results sharable like Amazon.
+- Pagination with a go to certain page to enhance user experience.
+- Loading spinners, loading progress bar, handle errors and empty state.
+- Stolen time are shown in the users time zone captured from browser.
+
+## Issues found in the API
+- No filter for dates which hendered the implementation of this feature.
+- The parameter named ``query`` which is responsiple for the full text search doesn't produce accurate results.
 
 ## Performance [Report](https://pagespeed.web.dev/analysis/https-bike-index-clone-vercel-app-bikes/y5lrag9mwm?form_factor=mobile) 
 ### 1- on Desktop
