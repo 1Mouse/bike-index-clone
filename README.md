@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Bike Index Clone
 
-## Getting Started
+## Deployed at [Vercel](https://bike-index-clone.vercel.app/)
+## Usage
+> development
+> ```
+> pnpm dev
+> ```
+> build
+> ```
+> pnpm build
+> ```
+> start
+> ```
+> pnpm start
+> ```
 
-First, run the development server:
+## Technologies used:
+- Nextjs: to demonstrate understanding of cutting edge RSC technology
+- TailwindCss: to increase development speed
+- Class-variance-authority, tailwind merge, clsx and other plugins to sort classes and make tailwind as clean as possible.
+- eslint and prettier
+- Typescript
+- Radix UI: for headless component with premade A11ty
+- zod: to validate api response.
+- SSR and React server components to provide a fast experience and eleminate client/server round trips.
+- next-nprogress-bar: to handle page transitions.
+- pnpm
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features:
+- Showing bikes with searching and filtering.
+- Handled query params to make the results sharable like Amazon.
+- Pagination with a go to certain page to enhance user experience.
+- Loading spinners, loading progress bar, handle errors and empty state.
+- Stolen time are shown in the users time zone captured from browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Issues found in the API
+- No filter for dates which hendered the implementation of this feature.
+- The parameter named ``query`` which is responsiple for the full text search doesn't produce accurate results.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Performance [Report](https://pagespeed.web.dev/analysis/https-bike-index-clone-vercel-app-bikes/y5lrag9mwm?form_factor=mobile) 
+### 1- on Desktop
+![image](https://github.com/user-attachments/assets/666c8cd5-374f-41a3-8ea8-9102b9456a2d)
+### 2- on Mobile
+![image](https://github.com/user-attachments/assets/e7e6b778-ed71-4e62-99ae-a04a70354645)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
